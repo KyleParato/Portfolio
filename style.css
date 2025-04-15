@@ -1,4 +1,6 @@
-
+body{
+  background-color: #ffffff;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -27,4 +29,43 @@ ul {
 
   li:last-child{
     border-right: none;
+  }
+
+
+  /*table*/
+  table{
+    border: 1px solid;
+    text-align: left;
+  }
+  th, td{
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid;
+  }
+
+
+  /*Image Gallery*/
+
+  .scrolling-gallery {
+    width: auto;
+    overflow-y: clip;
+    display: flex;
+    overflow-x: scroll;
+    gap: 2px;
+    height:calc(75vh - 0px);
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+  }
+  
+  .image-container img{
+    height:calc(100% - 40px);
+  }
+  
+  .image-container h2{
+    height:40px;
+    font-size:16pt;
+    align-self: center;
   }
