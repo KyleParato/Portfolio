@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.test{
+    width: 75vw;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.navbar-text{
+    font-weight: bolder;
+}
