@@ -42,7 +42,7 @@ export const Navbar = () => {
               <Link
                 className={clsx(
                   linkStyles({ color: "foreground", size:"lg"}),
-                  "data-[active=true]:text-primary data-[active=true]:font-bold"
+                  "data-[active=true]:text-primary data-[active=true]:font-bold data-[active=true]:underline"
                 )}
                 color="foreground"
                 href={item.href}
@@ -53,6 +53,8 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </div>
+        
+
       </NavbarContent>
 
       <NavbarContent

@@ -7,7 +7,8 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
-import {Card, CardBody} from "@heroui/card";
+import {Card, CardBody, CardFooter, CardHeader} from "@heroui/card";
+import {Divider} from "@heroui/divider";
 import {Image} from "@heroui/image"
 import Profile from "../img/Profile.JPG"
 
@@ -23,7 +24,7 @@ export default function IndexPage() {
         <div>
         <Card>
           <CardBody>
-            <p>Kyle Parato</p>
+            <h1>Kyle Parato</h1>
           </CardBody>
           <CardBody>
             <Image class="test"
@@ -31,14 +32,30 @@ export default function IndexPage() {
             alt="Me"
             isZoomed
             />
+
           </CardBody>
         </Card>
         </div>
         {/* Introduction */}
         
         {/* Level of Education */}
-
+        <Card>
+          <CardHeader>
+            <h1>Education</h1>
+          </CardHeader>
+          <CardBody>
+            <Divider />
+            <div>California State Universty, Fullerton</div>
+            <Divider orientation="vertical" />
+            <div> Batchelors</div>
+          </CardBody>
+        </Card>
         {/* Hobbies */}
+        <Card>
+          <CardHeader>
+            <h1>Photography</h1>
+          </CardHeader>
+        </Card>
       </section>
       
       {/* <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">

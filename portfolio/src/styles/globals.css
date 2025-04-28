@@ -13,4 +13,38 @@
 
 .navbar-text{
     font-weight: bolder;
+    font-size: 10vw;
+}
+
+.navbar-text-active{
+    font-weight: bolder;
+    font-size: 10vw;
+    text-decoration: underline;
+}
+
+.project-div{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.project-card{
+    width: 60vw;
+    justify-content: center;
+}
+.card-title{
+    justify-content: left;
+    text-align: start;
+    font-size: large;
+    font-weight: bolder;
+}
+.card-date{
+    justify-content: left;
+    text-align: start;
+    font-size: small;
+    font-weight: lighter;
+}
+.card-desc{
+    justify-content: left;
+    text-align: start;
+    font-size: medium;
 }
