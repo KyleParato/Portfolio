@@ -23,61 +23,75 @@ import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
 
-  return (
-    <HeroUINavbar maxWidth="xl" position="sticky" className="navbar">
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
-        {/* <NavbarBrand className="gap-3 max-w-fit">
-          <Link
-            className="flex justify-start items-center gap-1"
-            color="foreground"
-            href="/"
-          >
-            <Logo />
-            <p className="font-bold text-inherit">ACME</p>
-          </Link>
-        </NavbarBrand> */}
-        <div className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <Link
-                className={clsx(
-                  linkStyles({ color: "foreground", size:"lg"}),
-                  "data-[active=true]:text-primary data-[active=true]:font-bold data-[active=true]:underline"
-                )}
-                color="foreground"
-                href={item.href}
+  // return (
+  //   <HeroUINavbar className="navbar">
+  //     <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
+  //       {/* <NavbarBrand className="gap-3 max-w-fit">
+  //         <Link
+  //           className="flex justify-start items-center gap-1"
+  //           color="foreground"
+  //           href="/"
+  //         >
+  //           <Logo />
+  //           <p className="font-bold text-inherit">ACME</p>
+  //         </Link>
+  //       </NavbarBrand> */}
+  //       <div className="hidden lg:flex gap-4 justify-start ml-2">
+  //         {siteConfig.navItems.map((item) => (
+  //           <NavbarItem key={item.href}>
+  //             <Link
+  //               className={clsx(
+  //                 linkStyles({ color: "foreground", size:"lg"}),
+  //                 "data-[active=true]:text-primary data-[active=true]:font-bold data-[active=true]:underline"
+  //               )}
+  //               color="foreground"
+  //               href={item.href}
                 
-              >
-                {item.label}
-              </Link>
-            </NavbarItem>
-          ))}
-        </div>
+  //             >
+  //               {item.label}
+  //             </Link>
+  //           </NavbarItem>
+  //         ))}
+  //       </div>
         
 
-      </NavbarContent>
+  //     </NavbarContent>
 
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
-        <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.github} title="GitHub">
-            <GithubIcon className="text-default-500" />
-          </Link>
+  //     <NavbarContent
+  //       className="hidden sm:flex basis-1/5 sm:basis-full"
+  //       justify="end"
+  //     >
+  //       <NavbarItem className="hidden sm:flex gap-2">
+  //         <Link isExternal href={siteConfig.links.github} title="GitHub">
+  //           <GithubIcon className="text-default-500" />
+  //         </Link>
           
-        </NavbarItem>
-      </NavbarContent>
+  //       </NavbarItem>
+  //     </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
+  //     <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+  //       <Link isExternal href={siteConfig.links.github}>
+  //         <GithubIcon className="text-default-500" />
+  //       </Link>
         
-        <NavbarMenuToggle />
-      </NavbarContent>
+  //       <NavbarMenuToggle />
+  //     </NavbarContent>
 
       
-    </HeroUINavbar>
+  //   </HeroUINavbar>
+  // );
+
+  return(
+  
+    <nav class="flex fixed w-screen">
+      <div class="flex-1 flex justify-center mr-auto">
+        <ul class="list-style-none">
+          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/" data-twe-nav-link-ref>About</a></li>
+          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/projects" data-twe-nav-link-ref>Projects</a></li>
+          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/photos" data-twe-nav-link-ref>Photos</a></li>
+          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block"><a href={siteConfig.links.github}><GithubIcon className="text-default-500" /></a></li>
+        </ul>
+      </div>   
+    </nav>
   );
 };
