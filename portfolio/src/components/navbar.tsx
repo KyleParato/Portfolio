@@ -83,13 +83,14 @@ export const Navbar = () => {
 
   return(
   
-    <nav class="flex fixed w-screen">
-      <div class="flex-1 flex justify-center mr-auto">
+    <nav class="flex-none fixed w-screen h-auto bg-white">
+      <div class="flex-1 flex justify-center items-center mr-auto">
         <ul class="list-style-none">
           <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/" data-twe-nav-link-ref>About</a></li>
           <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/projects" data-twe-nav-link-ref>Projects</a></li>
+          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/skills" data-twe-nav-link-ref>Skills</a></li>
+          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/contact" data-twe-nav-link-ref>Contact</a></li>
           <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/photos" data-twe-nav-link-ref>Photos</a></li>
-          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block"><a href={siteConfig.links.github}><GithubIcon className="text-default-500" /></a></li>
         </ul>
       </div>   
     </nav>
