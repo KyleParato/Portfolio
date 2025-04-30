@@ -82,17 +82,19 @@ export const Navbar = () => {
   // );
 
   return(
-  
-    <nav class="flex-none fixed w-screen h-auto bg-white">
-      <div class="flex-1 flex justify-center items-center mr-auto">
-        <ul class="list-style-none">
-          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/" data-twe-nav-link-ref>About</a></li>
-          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/projects" data-twe-nav-link-ref>Projects</a></li>
-          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/skills" data-twe-nav-link-ref>Skills</a></li>
-          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/contact" data-twe-nav-link-ref>Contact</a></li>
-          <li class="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="/photos" data-twe-nav-link-ref>Photos</a></li>
+  <div className="z-20">
+    <nav className="flex-none w-screen h-auto z-20 bg-white shadow-xl shadow-orange-300/40 rounded-xl">
+      <div className="flex-1 flex justify-center items-center mr-auto align-middle">
+        <ul className="list-style-none sm: text-base md:text-xl lg:text-2xl font-medium sm:mb-2 md:mb-3 lg:mb-4">
+          <li className="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center hover:bg-orange-500/10" data-twe-nav-item-ref> <a href="/" data-twe-nav-link-ref>About</a></li>
+          <li className="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center hover:bg-orange-500/10" data-twe-nav-item-ref> <a href="/projects" data-twe-nav-link-ref>Projects</a></li>
+          <li className="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center hover:bg-orange-500/10" data-twe-nav-item-ref> <a href="/skills" data-twe-nav-link-ref>Skills</a></li>
+          <li className="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center hover:bg-orange-500/10" data-twe-nav-item-ref> <a href="/contact" data-twe-nav-link-ref>Contact</a></li>
+          <li className="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center hover:bg-orange-500/10" data-twe-nav-item-ref> <a href="/photos" data-twe-nav-link-ref>Photos</a></li>
+          <li className="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center hover:bg-orange-500/10" data-twe-nav-item-ref> <a href="https://github.com/" target="_blank" data-twe-nav-link-ref>Github</a></li>
         </ul>
       </div>   
     </nav>
+    </div>
   );
 };
