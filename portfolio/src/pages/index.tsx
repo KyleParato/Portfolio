@@ -3,6 +3,7 @@ import DefaultLayout from "@/layouts/default";
 import {Card, CardBody, CardHeader} from "@heroui/card";
 import {Image} from "@heroui/image"
 import Profile from "../img/image0.jpg"
+import {Gallery} from "@/components/gallery"
 
 export default function IndexPage() {
   return (
@@ -13,9 +14,9 @@ export default function IndexPage() {
           <h1 className={title()}>About Me</h1>
         </div>
         {/* Grid Layout */}
-        <div className="flex grid md:grid-cols-2 grid-cols-1 m-2">
+        <div className="flex grid lg:grid-cols-2 grid-cols-1 m-2">
         {/* Photo Card */}
-        <Card>
+        <Card className="h-fit">
           <CardBody>
             <Image className="object-scale-down"
             src={Profile}
@@ -40,7 +41,7 @@ export default function IndexPage() {
           </CardBody>
         </Card>
         {/* Education Card */}
-        <Card>
+        <Card className="h-fit">
           <CardHeader>
             <h1 className="text-xl font-medium">Education</h1>
           </CardHeader>
@@ -65,7 +66,9 @@ export default function IndexPage() {
           </CardBody>
         </Card>
         </div>
+        
         </div>
+        <Gallery/>
       </section>
     </DefaultLayout>
   );
