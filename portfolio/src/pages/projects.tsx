@@ -10,7 +10,6 @@ export default function DocsPage() {
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 max-w-9/10">
         <div className="inline-block max-w-9/10 text-center justify-center">
           <h1 className={title()}>Projects</h1>
-          <li className="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="https://github.com/" data-twe-nav-link-ref>Github</a></li>
           <div className="grid grid-cols-2">
         
         {/* Project */}

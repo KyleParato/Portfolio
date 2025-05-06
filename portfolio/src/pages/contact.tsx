@@ -3,6 +3,7 @@ import DefaultLayout from "@/layouts/default";
 import {Card, CardHeader, CardBody, CardFooter} from "@heroui/card";
 import {Snippet} from "@heroui/snippet";
 import { Link } from "@heroui/link";
+
 export default function DocsPage() {
   return (
     <DefaultLayout>
