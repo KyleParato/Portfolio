@@ -2,7 +2,7 @@
 
 export const Navbar = () => {
   return(
-    <nav className="flex-none w-screen h-auto bg-white rounded-5xl z-20 shadow-xl shadow-orange-300/40">
+    <nav className="flex-none w-screen h-auto bg-white rounded-5xl z-20 shadow-lg shadow-orange-300/40">
       <div className="flex-1 flex justify-center items-center mr-auto">
         <ul className="list-style-none">
         <div className="divide-x-2 divide-solid divide-orange-400">
