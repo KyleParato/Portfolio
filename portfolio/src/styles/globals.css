@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 
-.test{
-    width: 75vw;
-}
+
 
 .navbar{
     background-color: white;

@@ -10,7 +10,7 @@ import DefaultLayout from "@/layouts/default";
 import {Card, CardBody, CardFooter, CardHeader} from "@heroui/card";
 import {Divider} from "@heroui/divider";
 import {Image} from "@heroui/image"
-import Profile from "../img/Profile.JPG"
+import Profile from "../img/image0.jpg"
 
 export default function IndexPage() {
   return (
@@ -21,16 +21,15 @@ export default function IndexPage() {
           <h1 className={title()}>About Me</h1>
         </div>
         {/* Photo Card */}
-        <div>
+        <div className="">
         <Card>
           <CardBody>
             <h1>Kyle Parato</h1>
           </CardBody>
           <CardBody>
-            <Image class="test"
+            <Image className="object-scale-down"
             src={Profile}
             alt="Me"
-            isZoomed
             />
 
           </CardBody>
