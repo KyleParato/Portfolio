@@ -10,7 +10,8 @@ export default function DocsPage() {
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 max-w-9/10">
         <div className="inline-block max-w-9/10 text-center justify-center">
           <h1 className={title()}>Projects</h1>
-          <div class="grid grid-cols-2">
+          <li className="flex-1 m-4 lg:mb-0 lg:pe-2 inline-block text-center" data-twe-nav-item-ref> <a href="https://github.com/" data-twe-nav-link-ref>Github</a></li>
+          <div className="grid grid-cols-2">
         
         {/* Project */}
         <Card className="mx-auto flex max-w items-center p-5 m-5 shadow-xl shadow-orange-300/40">
@@ -26,9 +27,10 @@ export default function DocsPage() {
               </CardBody>
               <Divider/>
               <CardFooter>
-                <Link isExternal showAnchorIcon href="https://github.com/KyleParato/491">https://github.com/KyleParato/491</Link>
+                <Link className="overflow-hidden text-ellipsis" isExternal showAnchorIcon href="https://github.com/KyleParato/491">Edwards Lifesciences </Link>
               </CardFooter>
             </Card>
+        
         {/* Project */}
         <Card className="mx-auto flex max-w items-center p-5 m-5 shadow-xl shadow-orange-300/40">
               <CardHeader>
@@ -46,6 +48,7 @@ export default function DocsPage() {
                 <Link isExternal showAnchorIcon href="https://github.com/KyleParato/SFT">https://github.com/KyleParato/SFT</Link>
               </CardFooter>
             </Card>
+        
         {/* Project */}
         <Card className="mx-auto flex max-w items-center p-5 m-5 shadow-xl shadow-orange-300/40">
               <CardHeader>
@@ -63,6 +66,7 @@ export default function DocsPage() {
                 <Link isExternal showAnchorIcon href="https://github.com/KyleParato/481Final">https://github.com/KyleParato/481Final</Link>
               </CardFooter>
             </Card>
+          
           {/* Project */}
             <Card className="mx-auto flex max-w items-center p-5 m-5 shadow-xl shadow-orange-300/40">
               <CardHeader>
@@ -80,6 +84,7 @@ export default function DocsPage() {
                 <Link isExternal showAnchorIcon href="https://github.com/KyleParato/SFT">https://github.com/KyleParato/SFT</Link>
               </CardFooter>
             </Card>
+        
         {/* Project */}
         <Card className="mx-auto flex max-w items-center p-5 m-5 shadow-xl shadow-orange-300/40">
               <CardHeader>
@@ -97,6 +102,7 @@ export default function DocsPage() {
                 <Link isExternal showAnchorIcon href="https://github.com/KyleParato/471_Group_Project">https://github.com/KyleParato/471_Group_Project</Link>
               </CardFooter>
             </Card>
+        
         {/* Project */}
         <Card className="mx-auto flex max-w items-center p-5 m-5 shadow-xl shadow-orange-300/40">
               <CardHeader>

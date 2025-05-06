@@ -31,30 +31,42 @@ export default function IndexPage() {
             src={Profile}
             alt="Me"
             />
-
           </CardBody>
         </Card>
-        </div>
-        {/* Introduction */}
         
+        <div className="grid grid-row-3 gap-2">
+        {/* Introduction */}
+        <Card>
+        <CardHeader>
+            <h1>Kyle Parato</h1>
+        </CardHeader>
+          <CardBody>
+            <p className="text-sm font-light">Hello, my name is Kyle. </p>
+          </CardBody>
+        </Card>
         {/* Level of Education */}
         <Card>
           <CardHeader>
             <h1>Education</h1>
           </CardHeader>
           <CardBody>
-            <Divider />
-            <div>California State Universty, Fullerton</div>
-            <Divider orientation="vertical" />
-            <div> Batchelors</div>
+            <p className="text-xl text-clip">California State University, Fullerton</p>
+            <p className="text-xs font-light">May 2025</p>
           </CardBody>
         </Card>
+        
         {/* Hobbies */}
         <Card>
           <CardHeader>
-            <h1>Photography</h1>
+            <h1>Hobbies</h1>
           </CardHeader>
+          <CardBody>
+            <p className="font-light">Photography, Astorphotography, Weightlifting, Traveling</p>
+          </CardBody>
         </Card>
+        </div>
+
+        </div>
       </section>
       
       {/* <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">

@@ -54,5 +54,6 @@ export const siteConfig = {
   links: {
     github: "https://github.com/KyleParato",
     docs: "https://heroui.com",
+    p_491: "https://github.com"
   },
 };
