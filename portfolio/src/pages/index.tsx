@@ -14,7 +14,7 @@ export default function IndexPage() {
           <h1 className={title()}>About Me</h1>
         </div>
         {/* Grid Layout */}
-        <div className="flex grid lg:grid-cols-2 grid-cols-1 m-2">
+        <div className="flex grid lg:grid-cols-2 grid-cols-1 m-4">
         {/* Photo Card */}
         <Card className="h-fit">
           <CardBody>
